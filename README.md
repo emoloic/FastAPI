@@ -25,7 +25,7 @@ Since it is a modern framework, it also uses a modern features of Python. It use
 - **JSON schema:**  By default, it returns JSON which every modern API needs to communicate with other things.
 - **Open API** is a linux foundation, it defines how to create an API. It helps us create our APIs in a recommended way.
 
-### 4- VsCode|PyCharm Editor support
+### 4- VSCode|PyCharm Editor support
 
 Fast API has the auto completion in VSCode and PyCharm. This feature allows us to write APIs very fast.
 
@@ -228,7 +228,7 @@ It will show your docs like:
 
 You can now test our API in the same way we did when we were testing in our local machine.
 
-## Improvements
+## IV- Improvements
 
 Instead of using `SQLite` which is designed for quick experimentation. We can opt for a more robust database like MySQL, PostgreSQL, Oracle or SQL Server for deployment in production. Since this project is just a demo to show you how we can build a full API for CRUD operations with FastAPI, that's why we decided to choose a simple database like `SQLite`. 
 
