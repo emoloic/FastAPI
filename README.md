@@ -2,7 +2,7 @@
 
 In this project, we will create a full API for **CRUD** (Create Read Update Delete) of blog with user authentication.
 
-<img src="screenshots/swager-ui.JPG" alt="Overview of the project">
+<img src="screenshots/swagger-ui.JPG" alt="Overview of the project">
 
 ## I- What is FastAPI?
 
@@ -148,7 +148,7 @@ uvicorn main:app --reload
 5. Open your browser at [http://localhost:8000/docs](http://localhost:8000/docs)
 
 Once you open your browser at this address, you will see the automatic interactive API documentation (provided by Swagger UI)
-<img src="screenshots/swager-ui.JPG">
+<img src="screenshots/swagger-ui.JPG">
 
 Let's create a user. To create a user, simple go to the user route and use the POST method to register a new user. Click the button **Try it out**, then provide your informations (name, email and password) and click on the button **Execute**.
 <img src="screenshots/registration.JPG">
