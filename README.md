@@ -1,6 +1,6 @@
 # FastAPI Project
 
-In this project, we will create a full API for CRUD (Create Read Update Delete) of blog with user authentication.
+In this project, we will create a full API for **CRUD** (Create Read Update Delete) of blog with user authentication.
 
 ## I- What is FastAPI?
 
@@ -124,6 +124,7 @@ git clone https://github.com/emoloic/FastAPI.git
 cd FastAPI
 ```
 3. Create a virtual environment and installation of the dependencies.
+
 For this project, we will use [venv](https://docs.python.org/3/library/venv.html). `venv` is an environment manager that comes preinstalled with python3. Open your terminal and run the following commands:
 - Create a virtual environment named `blog-env`
 ```bash
@@ -143,13 +144,14 @@ cd blog
 uvicorn main:app --reload
 ```
 5. Open your browser at [http://localhost:8000/docs](http://localhost:8000/docs)
+
 Once you open your browser at this address, you will see the automatic interactive API documentation (provided by Swagger UI)
 <img src="screenshots/swager-ui2.JPG">
 
 Let's create a user. To create a user, simple go to the user route and use the POST method to register a new user. Click the button **Try it out**, then provide your informations (name, email and password) and click on the button **Execute**.
 <img src="screenshots/registration.JPG">
 
-You need to be authenticated in order to have access to the API. To do that, simply go at the top of the page and click on the button **Authorize**, once authenticated, you will be able to perform all the CRUD operation (ie Create, Read, Update, Delete). Simply go to each route and perform these operations.
+You need to be authenticated in order to have access to the API. To do that, simply go at the top of the page and click on the button **Authorize**. Once authenticated, you will be able to perform all the **CRUD** operation (ie Create, Read, Update, Delete). Simply go to each route and perform these operations.
 <img src="screenshots/authentication.JPG">
 
 We will only perform the first operations (ie Create a Blog). Feel free to try to perform the rest.
@@ -167,6 +169,7 @@ To deploy a FastAPI on Deta, our `main.py` and `requirements.txt` files must be 
 cd app
 ```
 2. Create a free Deta account
+
 To create a [free account on Deta](https://web.deta.sh/), you just need an email and password. You don't even need a credit card.
 3. Install the CLI
 Once you have your account, install the Deta CLI.
@@ -180,12 +183,15 @@ In a new terminal, confirm that it was correctly installed with:
 deta --help
 ```
 4. Login with the CLI
+
 Now login to Deta from the CLI with:
 ```bash
 deta login
 ``` 
+
 This will open a new browser and authenticate automatically.
 5. Deploy with Deta
+
 Next, deploy our application with the Deta CLI:
 ```bash
 deta new
@@ -204,7 +210,9 @@ You will see a JSON message similar to:
 }
 ```
 **Note:** Your deployment will have a different `"endpoint"` URL.
+
 6. Check it
+
 Now open your browser in your `endpoint` URL. In the example above it was `https://ebsie8.deta.dev`, but yours will be different.
 
 You will see a JSON response from our FastAPI app:
